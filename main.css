@@ -1,5 +1,3 @@
-
-
 #bamse {
     height: 90px;
     width: 90px;
@@ -59,7 +57,50 @@ hr {
    left: 40%;
     top: 40%;
     text-align: center;
+    animation: rättanimation 2s; 
 }
+
+@keyframes rättanimation {
+    0% {width: 100px; height: 100px;}
+    
+    100% {width: 250px; height: 250px;}
+}
+
+#rättsvartext{
+    text-align: center; 
+    font-family: sans-serif; 
+    color: green; 
+
+}
+
+.nästafråga{
+    font-size: 30px; 
+    font-family: sans-serif; 
+    text-decoration: none; 
+    color: blue; 
+    display: none; 
+}
+
+#pilnästafråga{
+    position: absolute; 
+    left: 40%; 
+    top: 80%; 
+    animation: pilanimation 1s infinite; 
+}
+
+#pil{
+    width: 150px; 
+    height: 114px;
+    
+}
+
+@keyframes pilanimation{
+    0% {left: 550px;}
+    50% {left: 560px;}
+    100% {left: 550px;}
+}
+
+
 .fel{
     height: 200px;
     width: 200px;
@@ -77,12 +118,50 @@ hr {
     text-align: center;  
     
 }
+
+.next:hover{
+    animation: nextarrow 1s infinite; 
+}
+
+@keyframes nextarrow{
+    0% {height: 200px; width: 200px;}
+    50% {height: 210px; width: 210px;}
+    100% {height: 200px; width: 200px;}
+}
 .bamse{
      height: 400px;
     width: 400px;
     position: absolute;
     left:10%;
     top:30%;
+    animation: bamseglad 1s infinite; 
+}
+
+@keyframes bamseglad{
+    0% {top: 150px;}
+    50% {top: 160px;}
+    100% {top: 150px;}
+}
+
+#grattis{
+    text-align: center; 
+    font-family: sans-serif; 
+    color: blue; 
+}
+
+#lilleskutt{
+    position: absolute; 
+    width: 200px; 
+    height: 275px; 
+    left: 45%; 
+    top: 40%; 
+    animation: hoppar 1s infinite; 
+}
+
+@keyframes hoppar{
+    0% {top: 225px;}
+    50% {top: 270px;}
+    100% {top: 225px;}
 }
 .sista{
     
@@ -95,7 +174,7 @@ hr {
 
  
     
-}
+
 .item{
   width:200px;
   text-align:center;
